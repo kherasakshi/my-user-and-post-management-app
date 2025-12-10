@@ -1,0 +1,59 @@
+.dashboard-home {
+  padding: 30px;
+}
+.home-container {
+  display: flex;
+}
+
+.home-content {
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  min-height: 100vh;
+  text-align: center;
+  justify-content: center;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hero-image {
+  width: 300px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 220px;
+  height: 130px;
+  background: #102378;
+  color: #fff4f4;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(29, 27, 27, 0.1);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(136, 132, 132, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

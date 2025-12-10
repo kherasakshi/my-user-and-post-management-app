@@ -1,0 +1,116 @@
+.settings-container {
+  max-width: 480px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 24px;
+  background: #d3e4f7fd;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+  transition: 0.3s ease;
+}
+
+.settings-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.settings-section {
+  margin-bottom: 24px;
+}
+
+.settings-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.settings-select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.settings-select:focus {
+  outline: none;
+  border-color: #007bff;
+  background: #fff;
+}
+
+.settings-checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.settings-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  accent-color: #007bff;
+}
+
+@media (max-width: 480px) {
+  .settings-container {
+    padding: 18px;
+    margin: 20px auto;
+    width: 92%;
+  }
+
+  .settings-title {
+    font-size: 1.6rem;
+  }
+
+  .settings-label,
+  .settings-checkbox-label {
+    font-size: 0.95rem;
+  }
+
+  .settings-select {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+
+  .settings-checkbox {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .settings-container {
+    max-width: 600px;
+    width: 90%;
+  }
+
+  .settings-title {
+    font-size: 1.8rem;
+  }
+
+  .settings-select {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .settings-container {
+    max-width: 600px;
+  }
+
+  .settings-title {
+    font-size: 2.2rem;
+  }
+}
