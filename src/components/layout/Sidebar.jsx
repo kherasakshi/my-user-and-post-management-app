@@ -4,17 +4,22 @@ import { FaBars } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import "./Sidebar.css";
 
-export default function Sidebar() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Sidebar({ onToggle }) {
+  const [isOpen, setIsOpen] = useState(true);
   const { t } = useTranslation();
   const location = useLocation();
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+    onToggle(!isOpen);
+  };
 
   const isUserDetailsActive = location.pathname.startsWith("/userDetails/");
   const isPostDetailsActive = location.pathname.startsWith("/postDetails/");
 
   return (
     <>
-      <button className="sidebar-toggle" onClick={() => setIsOpen(!isOpen)}>
+      <button className="sidebar-toggle" onClick={toggleSidebar}>
         <FaBars />
       </button>
 
